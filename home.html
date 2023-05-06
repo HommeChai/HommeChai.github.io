@@ -5,6 +5,11 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+        /*  字体设置    */
+        .p1 {
+            font-family: "Times New Roman", Times, serif;
+        }
+
         /* 为了兼容移动端显示来禁止滑动 参考了"https://juejin.cn/post/6844903615912476686"的方法通过固定html部分解决 */
         html {
             height: 100%;
@@ -112,7 +117,7 @@
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="./home.html">Home</a>
+            <a href="./Home.html">Home</a>
             <a href="./Works.html">Works</a>
             <a href="./CV.html">CV</a>
             <a href="./About.html">About</a>
@@ -124,8 +129,44 @@
         <span style="font-size:30px;cursor:pointer" onclick="openNav()" color="blue"> &#9776; &emsp; Home</span>
     </div>
 
-    <div id="text">
-        <h2>No use man</h2>
+    <div id="content" class="site-content">
+
+        <section id="primary" class="content-area">
+            <main id="main" class="site-main">
+
+
+                <article id="post-6" class="post-6 page type-page status-publish has-post-thumbnail hentry entry">
+
+                    <header class="entry-header responsive-max-width">
+
+                        <h1 class="entry-title">About Lee</h1>
+                    </header>
+
+
+                    <div class="entry-content">
+                        <p>My earliest research also involved &nbsp;what influences people to have a desire to “escape
+                            the
+                            self”, understanding why people might irrationally hold on to things they no longer want,
+                            and
+                            how people used Myspace and Facebook messages to talk to deceased users.</p>
+
+
+
+                        <p>Visit the <a href="https://leetaber.com/research/">current research projects</a> tab for more
+                            information.</p>
+
+
+
+                        <p>Contact me at ltaber@ucsc.edu or Twitter/Linkedin below</p>
+                        <p></p>
+                    </div><!-- .entry-content -->
+
+                </article><!-- #post-6 -->
+
+            </main><!-- #main -->
+        </section><!-- #primary -->
+
+
     </div>
 
     <script>
