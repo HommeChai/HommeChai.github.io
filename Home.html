@@ -4,6 +4,10 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link href='./css/fontsetting.css' rel='stylesheet' type='text/css'>
     <style>
         /*  字体设置    */
         .p1 {
@@ -113,7 +117,7 @@
 </head>
 
 <body>
-
+    <!-- 侧边侧拉导航栏 -->
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
@@ -124,48 +128,73 @@
             <a href="./index.html">Back</a>
         </div>
     </div>
-
+    <!-- 顶部导航栏只显示标题 -->
     <div class="topnav">
         <span style="font-size:30px;cursor:pointer" onclick="openNav()" color="blue"> &#9776; &emsp; Home</span>
     </div>
 
     <div id="content" class="site-content">
+        <!-- Page Content -->
+        <div class="container">
 
-        <section id="primary" class="content-area">
-            <main id="main" class="site-main">
+            <div class="row">
+
+                <!-- Entries Column -->
+                <div class="col-md-8" style="height: 100vh;">
+
+                    <!-- Main Image -->
+                    <img class="img-responsive" src="./Figures/ME.jpeg" alt=""><br>
+
+                    <div style="margin-top:3%; text-align:justify;">
+                        <p>I am currently a PhD Candiate at SCMS, Fudan University. <a href="#">elit</a>, One can check
+                            the works part for some notes/reports I have made.</p>
+
+                        <p>My research interests mainly focus on representation theory of Lie groups and its interaction
+                            with
+                            operator algebras. And I have been learning topics on topological/algebraic K-theory.
+                        </p>
+
+                        <p>This site is supported by
+                            <a href="https://pages.github.com/">GitPage</a>. And the layouts and structures of this site
+                            are mixture of open-source projects collaboration below.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact Info on the Sidebar -->
+                <div class="col-md-4">
+                    <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>Chai Hao</b></div><br>
+                    <p><b>chai199905@163.com</b><br>
+                    <p>SCMS<br>
+                        Fudan University<br>
+                        Yangpu<br>
+                        Shanghai<br>
+                        China<br>
+                    </p>
+                </div>
 
 
-                <article id="post-6" class="post-6 page type-page status-publish has-post-thumbnail hentry entry">
-
-                    <header class="entry-header responsive-max-width">
-
-                        <h1 class="entry-title">About Lee</h1>
-                    </header>
-
-
-                    <div class="entry-content">
-                        <p>My earliest research also involved &nbsp;what influences people to have a desire to “escape
-                            the
-                            self”, understanding why people might irrationally hold on to things they no longer want,
-                            and
-                            how people used Myspace and Facebook messages to talk to deceased users.</p>
+                <!-- Links on the Sidebar -->
+                <div class="col-md-4" style="margin-top:2%">
+                    <dd><a href="https://math.stackexchange.com/users/827400/yotal">MathStackexchange</a></dd>
+                    <dd><a href="https://www.researchgate.net/profile/Chai-Hao-4">ResearchGate</a></dd>
+                    <dd><a href="#">LeetCode</a></dd>
+                </div>
 
 
 
-                        <p>Visit the <a href="https://leetaber.com/research/">current research projects</a> tab for more
-                            information.</p>
+
+            </div>
 
 
+        </div>
+        <!-- /.container -->
 
-                        <p>Contact me at ltaber@ucsc.edu or Twitter/Linkedin below</p>
-                        <p></p>
-                    </div><!-- .entry-content -->
-
-                </article><!-- #post-6 -->
-
-            </main><!-- #main -->
-        </section><!-- #primary -->
-
+        <!-- Other people may like it too! -->
+        <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">This
+            Page is
+            powered by Plain
+            Academic</a>
 
     </div>
 
