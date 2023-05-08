@@ -24,11 +24,11 @@
             width: 100%;
             /* 移动端存在两个滑动属性   一个是html相对于浏览器等框架的滑动  一个是body相对于html的滑动  需要分别处理 */
             /* position: fixed; */
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         body {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
             overflow-y: auto;
             overflow-x: auto;
             background-color: #f0eee5fe;
@@ -114,7 +114,6 @@
             padding: 8px 8px;
             text-decoration: none;
             z-index: 10;
-            /* font-size: 17px; */
         }
 
         /* 文字字体 */
@@ -141,9 +140,11 @@
         <span style="font-size:20px;cursor:pointer" onclick="openNav()" color="blue"> &#9776; &emsp; About</span>
     </div>
 
-    <div id="text" class="p1">
-        <h2>Short Intro here</h2>
-        <p>My name is Chai Hao which is "柴昊" written in simplified Chinese. Other things are not so important.</p>
+    <div id="text" class="col-md-6 col-md-offset-3">
+        <h2>About me</h2>
+        <p>My name is Chai Hao which is "柴昊" written in simplified Chinese/traditional Chinese.
+            Other things are not so important. And Welcome any communication about mathematics and technology.</p>
+
     </div>
 
     <script>

@@ -3,16 +3,16 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <link href='./css/fontsetting.css' rel='stylesheet' type='text/css'>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="./css/resume.css" media="all" />
     <style>
         /* 居中 */
         .center {
             margin: auto;
             /*居中*/
-            width: 60%;
+            width: 98%;
             padding: 10px;
         }
 
@@ -30,9 +30,9 @@
         }
 
         /*  字体设置    */
-        .p1 {
+        /* .p1 {
             font-family: "Times New Roman", Times, serif;
-        }
+        } */
 
         /* 为了兼容移动端显示来禁止滑动 参考了"https://juejin.cn/post/6844903615912476686"的方法通过固定html部分解决 */
         html {
@@ -40,11 +40,10 @@
             width: 100%;
             /* 移动端存在两个滑动属性   一个是html相对于浏览器等框架的滑动  一个是body相对于html的滑动  需要分别处理 */
             /* position: fixed; */
+            background-color: #f0eee5fe;
         }
 
         body {
-            height: 100%;
-            width: 100%;
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             overflow-y: auto;
@@ -114,6 +113,8 @@
             position: sticky;
             top: 0;
             background-color: #333;
+            width: 140em;
+            height: 40px;
             overflow: hidden;
             z-index: 10;
         }
@@ -132,7 +133,6 @@
             padding: 8px 8px;
             text-decoration: none;
             z-index: 10;
-            /* font-size: 17px; */
         }
 
         /* 文字字体 */
@@ -159,27 +159,144 @@
         <span style="font-size:20px;cursor:pointer" onclick="openNav()" color="blue"> &#9776; &emsp; CV</span>
     </div>
 
-    <div class="col-md-6 col-md-offset-3" style="margin-bottom: 3cm;">
-        <h2>Education</h2>
-        <p>
-            <li>Before 2017</li>
-            <li>2017-2021</li>
-            <li>2021-Now</li>
-        </p>
-        <h2>Other experience</h2>
-        <p>Teaching assistant on Statistic Machhine Learning/Algebraic Number Theory.</p>
-        <h2>Awards</h2>
-        <p>citizen server or government client for the best.</p>
-    </div>
+    <div id="doc2" class="CV-t7">
+        <div id="inner">
 
-    <p style="margin-bottom: 2cm;">
-        Or one can check the PDF version below.
-    </p>
+            <div id="hd">
+                <div class="CV-gc">
+                    <div class="CV-u first">
+                        <h1>Chai Hao</h1>
+                        <h2>PhD candiates</h2>
+                    </div>
 
-    <div class="center">
-        <iframe id="CV-us-en" title="EnglishCurriculumVitae" src="./CV/CV-us-en.pdf">
-            <p>Your browser does not support iframes.</p>
-        </iframe>
+                    <div class="CV-u">
+                        <div class="contact-info">
+                            <h3><a id="pdf" href="#">Download PDF</a></h3>
+                            <h3><a href="mailto:name@yourdomain.com">chai1999005@163.com</a></h3>
+                            <h3>Hulun Beier, China</h3>
+                        </div>
+                        <!--// .contact-info -->
+                    </div>
+                </div>
+                <!--// .CV-gc -->
+            </div>
+            <!--// hd -->
+
+            <div id="bd">
+                <div id="CV-main">
+                    <div class="CV-b">
+
+                        <div class="CV-gf">
+                            <div class="CV-u first">
+                                <h2>Education</h2>
+                            </div>
+                            <div class="CV-u last">
+                                <div class="item">
+                                    <h2>SCMS, Fudan University</h2>
+                                    <h3>Graduate Student,&mdash; Mathematics.</h3>
+                                    <h4>
+                                        2021.9-Now
+                                    </h4>
+                                    <h5>
+                                        Shanghai,China
+                                    </h5>
+                                    <p>I am Currently a PhD candiates/graduate student
+                                        at SCMS(Shanghai Center for Mathematical Sciences), Fudan University.
+                                        And this institute locals at Shanghai,China.
+                                    </p>
+                                </div>
+
+                                <div class="item last">
+                                    <h2>Peking University</h2>
+                                    <h3>B.S,&mdash; Mathematics.</h3>
+                                    <h4>2017.9-2021.6</h4>
+                                    <h5>Beijing,China</h5>
+                                    <p>I was a 2nd class scholarship winner at that time. And I held an average GPA at
+                                        3.4(40%) during
+                                        underguadate terms.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// .CV-gf -->
+
+                        <div class="CV-gf">
+                            <div class="CV-u first">
+                                <h2>Awards</h2>
+                            </div>
+                            <div class="CV-u last">
+                                <li class="item last">
+                                    <h3>
+                                        Second class freshman scholarship in Peking University.
+                                    </h3>
+                                    <h4>
+                                        2017.10
+                                    </h4>
+                                </li>
+                            </div>
+                        </div>
+                        <!--// .CV-gf -->
+
+                        <div class="CV-gf">
+                            <div class="CV-u first">
+                                <h2>Technical</h2>
+                            </div>
+                            <div class="CV-u">
+                                <ul class="triterm">
+                                    <li>LaTeX</li>
+                                    <li>Python</li>
+                                    <li class="last">C++</li>
+                                </ul>
+
+                                <ul class="triterm">
+                                    <li>MATLAB/SageMath</li>
+                                    <li>Algorithms</li>
+                                    <li class="last">Statistic</li>
+                                </ul>
+
+                                <ul class="triterm">
+                                    <li>Chinese(Native)</li>
+                                    <li>English(CET-6:560)</li>
+                                    <li class="last">Français(Learning)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--// .CV-gf-->
+
+                        <div class="CV-gf">
+
+                            <div class="CV-u first">
+                                <h2>Experience</h2>
+                            </div>
+                            <!--// .CV-u -->
+
+                            <div class="CV-u last">
+                            </div>
+                            <!--// .CV-u -->
+                        </div>
+                    </div>
+                    <!--// .CV-b -->
+                </div>
+                <!--// CV-main -->
+            </div>
+            <!--// bd -->
+
+            <p style="margin-bottom: 2cm;">
+                Or one can check the PDF version below.
+            </p>
+
+            <div class="center">
+                <iframe id="CV-us-en" title="EnglishCurriculumVitae" src="./CV/CV-us-en.pdf">
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
+            </div>
+
+            <div id="ft">
+                <p>Chai Hao &mdash; <a href="mailto:name@yourdomain.com">chai1999005@163.com</a> &mdash; Shanghai,China.
+                </p>
+            </div>
+            <!--// footer -->
+        </div><!-- // inner -->
     </div>
 
     <script>

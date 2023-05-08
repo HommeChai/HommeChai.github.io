@@ -1,0 +1,803 @@
+/*
+All Copyrights Below:
+
+---------------------------------------------------------------------------------
+	STRIPPED DOWN RESUME TEMPLATE
+    html resume
+
+    v0.9: 5/28/09
+
+    design and code by: thingsthatarebrown.com 
+                        (matt brown)
+---------------------------------------------------------------------------------
+
+Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.7.0
+
+*/
+
+html {
+    color: #000;
+    background: #FFF;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var,
+optgroup {
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+del,
+ins {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal;
+}
+
+sup {
+    vertical-align: baseline;
+}
+
+sub {
+    vertical-align: baseline;
+}
+
+legend {
+    color: #000;
+}
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+input,
+button,
+textarea,
+select {
+    *font-size: 100%;
+}
+
+body {
+    font: 13px/1.231 arial, helvetica, clean, sans-serif;
+    *font-size: small;
+    *font: x-small;
+}
+
+select,
+input,
+button,
+textarea,
+button {
+    font: 99% arial, helvetica, clean, sans-serif;
+}
+
+table {
+    font-size: inherit;
+    font: 100%;
+}
+
+pre,
+code,
+kbd,
+samp,
+tt {
+    font-family: monospace;
+    *font-size: 108%;
+    line-height: 100%;
+}
+
+body {
+    text-align: center;
+}
+
+#doc,
+#doc2,
+#doc3,
+#doc4,
+.CV-t1,
+.CV-t2,
+.CV-t3,
+.CV-t4,
+.CV-t5,
+.CV-t6,
+.CV-t7 {
+    margin: auto;
+    text-align: left;
+    width: 57.69em;
+    *width: 56.25em;
+}
+
+#doc2 {
+    width: 73.076em;
+    *width: 71.25em;
+}
+
+#doc3 {
+    margin: auto 10px;
+    width: auto;
+}
+
+#doc4 {
+    width: 74.923em;
+    *width: 73.05em;
+}
+
+.CV-b {
+    position: relative;
+}
+
+.CV-b {
+    _position: static;
+}
+
+#CV-main .CV-b {
+    position: static;
+}
+
+#CV-main,
+.CV-g .CV-u .CV-g {
+    width: 100%;
+}
+
+.CV-t1 #CV-main,
+.CV-t2 #CV-main,
+.CV-t3 #CV-main {
+    float: right;
+    margin-left: -25em;
+}
+
+.CV-t4 #CV-main,
+.CV-t5 #CV-main,
+.CV-t6 #CV-main {
+    float: left;
+    margin-right: -25em;
+}
+
+.CV-t1 .CV-b {
+    float: left;
+    width: 12.30769em;
+    *width: 12.00em;
+}
+
+.CV-t1 #CV-main .CV-b {
+    margin-left: 13.30769em;
+    *margin-left: 13.05em;
+}
+
+.CV-t2 .CV-b {
+    float: left;
+    width: 13.8461em;
+    *width: 13.50em;
+}
+
+.CV-t2 #CV-main .CV-b {
+    margin-left: 14.8461em;
+    *margin-left: 14.55em;
+}
+
+.CV-t3 .CV-b {
+    float: left;
+    width: 23.0769em;
+    *width: 22.50em;
+}
+
+.CV-t3 #CV-main .CV-b {
+    margin-left: 24.0769em;
+    *margin-left: 23.62em;
+}
+
+.CV-t4 .CV-b {
+    float: right;
+    width: 13.8456em;
+    *width: 13.50em;
+}
+
+.CV-t4 #CV-main .CV-b {
+    margin-right: 14.8456em;
+    *margin-right: 14.55em;
+}
+
+.CV-t5 .CV-b {
+    float: right;
+    width: 18.4615em;
+    *width: 18.00em;
+}
+
+.CV-t5 #CV-main .CV-b {
+    margin-right: 19.4615em;
+    *margin-right: 19.125em;
+}
+
+.CV-t6 .CV-b {
+    float: right;
+    width: 23.0769em;
+    *width: 22.50em;
+}
+
+.CV-t6 #CV-main .CV-b {
+    margin-right: 24.0769em;
+    *margin-right: 23.62em;
+}
+
+.CV-t7 #CV-main .CV-b {
+    display: block;
+    margin: 0 0 1em 0;
+}
+
+#CV-main .CV-b {
+    float: none;
+    width: auto;
+}
+
+.CV-gb .CV-u,
+.CV-g .CV-gb .CV-u,
+.CV-gb .CV-g,
+.CV-gb .CV-gb,
+.CV-gb .CV-gc,
+.CV-gb .CV-gd,
+.CV-gb .CV-ge,
+.CV-gb .CV-gf,
+.CV-gc .CV-u,
+.CV-gc .CV-g,
+.CV-gd .CV-u {
+    float: left;
+}
+
+.CV-g .CV-u,
+.CV-g .CV-g,
+.CV-g .CV-gb,
+.CV-g .CV-gc,
+.CV-g .CV-gd,
+.CV-g .CV-ge,
+.CV-g .CV-gf,
+.CV-gc .CV-u,
+.CV-gd .CV-g,
+.CV-g .CV-gc .CV-u,
+.CV-ge .CV-u,
+.CV-ge .CV-g,
+.CV-gf .CV-g,
+.CV-gf .CV-u {
+    float: right;
+}
+
+.CV-g div.first,
+.CV-gb div.first,
+.CV-gc div.first,
+.CV-gd div.first,
+.CV-ge div.first,
+.CV-gf div.first,
+.CV-g .CV-gc div.first,
+.CV-g .CV-ge div.first,
+.CV-gc div.first div.first {
+    float: left;
+}
+
+.CV-g .CV-u,
+.CV-g .CV-g,
+.CV-g .CV-gb,
+.CV-g .CV-gc,
+.CV-g .CV-gd,
+.CV-g .CV-ge,
+.CV-g .CV-gf {
+    width: 49.1%;
+}
+
+.CV-gb .CV-u,
+.CV-g .CV-gb .CV-u,
+.CV-gb .CV-g,
+.CV-gb .CV-gb,
+.CV-gb .CV-gc,
+.CV-gb .CV-gd,
+.CV-gb .CV-ge,
+.CV-gb .CV-gf,
+.CV-gc .CV-u,
+.CV-gc .CV-g,
+.CV-gd .CV-u {
+    width: 32%;
+    margin-left: 1.99%;
+}
+
+.CV-gb .CV-u {
+    *margin-left: 1.9%;
+    *width: 31.9%;
+}
+
+.CV-gc div.first,
+.CV-gd .CV-u {
+    width: 66%;
+}
+
+.CV-gd div.first {
+    width: 32%;
+}
+
+.CV-ge div.first,
+.CV-gf .CV-u {
+    width: 74.2%;
+}
+
+.CV-ge .CV-u,
+.CV-gf div.first {
+    width: 24%;
+}
+
+.CV-g .CV-gb div.first,
+.CV-gb div.first,
+.CV-gc div.first,
+.CV-gd div.first {
+    margin-left: 0;
+}
+
+.CV-g .CV-g .CV-u,
+.CV-gb .CV-g .CV-u,
+.CV-gc .CV-g .CV-u,
+.CV-gd .CV-g .CV-u,
+.CV-ge .CV-g .CV-u,
+.CV-gf .CV-g .CV-u {
+    width: 49%;
+    *width: 48.1%;
+    *margin-left: 0;
+}
+
+.CV-g .CV-g .CV-u {
+    width: 48.1%;
+}
+
+.CV-g .CV-gb div.first,
+.CV-gb .CV-gb div.first {
+    *margin-right: 0;
+    *width: 32%;
+    _width: 31.7%;
+}
+
+.CV-g .CV-gc div.first,
+.CV-gd .CV-g {
+    width: 66%;
+}
+
+.CV-gb .CV-g div.first {
+    *margin-right: 4%;
+    _margin-right: 1.3%;
+}
+
+.CV-gb .CV-gc div.first,
+.CV-gb .CV-gd div.first {
+    *margin-right: 0;
+}
+
+.CV-gb .CV-gb .CV-u,
+.CV-gb .CV-gc .CV-u {
+    *margin-left: 1.8%;
+    _margin-left: 4%;
+}
+
+.CV-g .CV-gb .CV-u {
+    _margin-left: 1.0%;
+}
+
+.CV-gb .CV-gd .CV-u {
+    *width: 66%;
+    _width: 61.2%;
+}
+
+.CV-gb .CV-gd div.first {
+    *width: 31%;
+    _width: 29.5%;
+}
+
+.CV-g .CV-gc .CV-u,
+.CV-gb .CV-gc .CV-u {
+    width: 32%;
+    _float: right;
+    margin-right: 0;
+    _margin-left: 0;
+}
+
+.CV-gb .CV-gc div.first {
+    width: 66%;
+    *float: left;
+    *margin-left: 0;
+}
+
+.CV-gb .CV-ge .CV-u,
+.CV-gb .CV-gf .CV-u {
+    margin: 0;
+}
+
+.CV-gb .CV-gb .CV-u {
+    _margin-left: .7%;
+}
+
+.CV-gb .CV-g div.first,
+.CV-gb .CV-gb div.first {
+    *margin-left: 0;
+}
+
+.CV-gc .CV-g .CV-u,
+.CV-gd .CV-g .CV-u {
+    *width: 48.1%;
+    *margin-left: 0;
+}
+
+.CV-gb .CV-gd div.first {
+    width: 32%;
+}
+
+.CV-g .CV-gd div.first {
+    _width: 29.9%;
+}
+
+.CV-ge .CV-g {
+    width: 24%;
+}
+
+.CV-gf .CV-g {
+    width: 74.2%;
+}
+
+.CV-gb .CV-ge div.CV-u,
+.CV-gb .CV-gf div.CV-u {
+    float: right;
+}
+
+.CV-gb .CV-ge div.first,
+.CV-gb .CV-gf div.first {
+    float: left;
+}
+
+.CV-gb .CV-ge .CV-u,
+.CV-gb .CV-gf div.first {
+    *width: 24%;
+    _width: 20%;
+}
+
+.CV-gb .CV-ge div.first,
+.CV-gb .CV-gf .CV-u {
+    *width: 73.5%;
+    _width: 65.5%;
+}
+
+.CV-ge div.first .CV-gd .CV-u {
+    width: 65%;
+}
+
+.CV-ge div.first .CV-gd div.first {
+    width: 32%;
+}
+
+#hd:after,
+#bd:after,
+#ft:after,
+.CV-g:after,
+.CV-gb:after,
+.CV-gc:after,
+.CV-gd:after,
+.CV-ge:after,
+.CV-gf:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#hd,
+#bd,
+#ft,
+.CV-g,
+.CV-gb,
+.CV-gc,
+.CV-gd,
+.CV-ge,
+.CV-gf {
+    zoom: 1;
+}
+
+.msg {
+    padding: 10px;
+    background: #222;
+    position: relative;
+}
+
+.msg h1 {
+    color: #fff;
+}
+
+.msg a {
+    margin-left: 20px;
+    background: #408814;
+    color: white;
+    padding: 4px 8px;
+    text-decoration: none;
+}
+
+.msg a:hover {
+    background: #266400;
+}
+
+/* //-- CV-grids style overrides -- */
+body {
+    color: #444;
+}
+
+#inner {
+    font-family: Georgia;
+    padding: 10px 80px;
+    margin: 80px auto;
+    background: #f5f5f5;
+    border: solid #666;
+    border-width: 8px 0 2px 0;
+}
+
+.CV-gf {
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #ccc;
+}
+
+/* //-- header, body, footer -- */
+#hd {
+    margin: 2.5em 0 3em 0;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #ccc
+}
+
+#hd h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#bd,
+#ft {
+    margin-bottom: 2em;
+}
+
+/* //-- footer -- */
+#ft {
+    padding: 1em 0 5em 0;
+    font-size: 92%;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+#ft p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* //-- core typography and style -- */
+#hd h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 152%
+}
+
+h3,
+h4 {
+    font-size: 122%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #333;
+}
+
+p {
+    font-size: 100%;
+    line-height: 18px;
+    padding-right: 3em;
+}
+
+a {
+    color: #990003
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+li {
+    line-height: 24px;
+    border-bottom: 1px solid #ccc;
+}
+
+p.enlarge {
+    font-size: 144%;
+    padding-right: 6.5em;
+    line-height: 24px;
+}
+
+p.enlarge span {
+    color: #000
+}
+
+.contact-info {
+    margin-top: 7px;
+}
+
+.first h2 {
+    font-style: italic;
+}
+
+.last {
+    border-bottom: 0
+}
+
+
+/* //-- section styles -- */
+
+a#pdf {
+    display: block;
+    float: left;
+    background: #666;
+    color: white;
+    padding: 6px 50px 6px 12px;
+    margin-bottom: 6px;
+    text-decoration: none;
+}
+
+a#pdf:hover {
+    background: #222;
+}
+
+.item {
+    position: relative;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+}
+
+.item h4 {
+    position: absolute;
+    top: 0.35em;
+    right: 0
+}
+
+.item p {
+    margin: 0.75em 0 3em 0;
+}
+
+.last {
+    border: none;
+}
+
+/* .skills-list {} */
+
+.skills-list ul {
+    margin: 0;
+}
+
+.skills-list li {
+    margin: 3px 0;
+    padding: 3px 0;
+}
+
+.skills-list li span {
+    font-size: 152%;
+    display: block;
+    margin-bottom: -2px;
+    padding: 0
+}
+
+.triterm {
+    width: 32%;
+    float: left
+}
+
+.triterm h2 {
+    margin-bottom: 6px;
+}
+
+#srt-ttab {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#srt-ttab img.last {
+    margin-top: 20px
+}
+
+/* --// override to force 1/8th width grids -- */
+.CV-gf .CV-u {
+    width: 80.2%;
+}
+
+.CV-gf div.first {
+    width: 12.3%;
+}
