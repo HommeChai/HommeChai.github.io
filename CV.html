@@ -8,6 +8,22 @@
     <script src="./js/bootstrap.min.js"></script>
     <link href='./css/fontsetting.css' rel='stylesheet' type='text/css'>
     <style>
+        /* 居中 */
+        .center {
+            margin: auto;
+            /*居中*/
+            width: 60%;
+            padding: 10px;
+        }
+
+        /* 页面内部加载PDF */
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: 1px solid black;
+            overflow: scroll;
+        }
+
         /* 文字块 */
         .workstxtblock {
             margin-bottom: 2cm;
@@ -29,7 +45,8 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            overflow: scroll;
+            overflow-y: auto;
+            overflow-x: auto;
             background-color: #f0eee5fe;
             /* 字体大小随屏幕自适应 */
         }
@@ -137,10 +154,10 @@
     </div>
 
     <div class="topnav">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()" color="blue"> &#9776; &emsp; CV</span>
+        <span style="font-size:20px;cursor:pointer" onclick="openNav()" color="blue"> &#9776; &emsp; CV</span>
     </div>
 
-    <div id="text">
+    <div class="col-md-6 col-md-offset-3" style="margin-bottom: 3cm;">
         <h2>Education</h2>
         <p>
             <li>Before 2017</li>
@@ -151,6 +168,12 @@
         <p>Teaching assistant on Statistic Machhine Learning/Algebraic Number Theory.</p>
         <h2>Awards</h2>
         <p>citizen server or government client for the best.</p>
+    </div>
+
+    <div class="center">
+        <iframe id="CV-us-en" title="EnglishCurriculumVitae" src="./CV/CV-us-en.pdf">
+            <p>Your browser does not support iframes.</p>
+        </iframe>
     </div>
 
     <script>

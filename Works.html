@@ -9,14 +9,29 @@
     <script src="./js/bootstrap.min.js"></script>
     <link href='./css/fontsetting.css' rel='stylesheet' type='text/css'>
     <style>
+        /* 水平线 */
+        hr {
+            border: 1px solid grey;
+            width: 100%;
+            color: gray;
+        }
+
         /* 文字块 */
-        .workstxtblock {
+        .margintwo {
             margin-bottom: 2cm;
         }
 
         /*  字体设置    */
         .p1 {
             font-family: "Times New Roman", Times, serif;
+        }
+
+        li {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        a {
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         /* 为了兼容移动端显示来禁止滑动 参考了"https://juejin.cn/post/6844903615912476686"的方法通过固定html部分解决 */
@@ -30,7 +45,8 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            overflow: scroll;
+            overflow-y: auto;
+            overflow-x: auto;
             background-color: #f0eee5fe;
             /* 字体大小随屏幕自适应 */
         }
@@ -138,108 +154,114 @@
     </div>
 
     <div class="topnav">
-        <span style="font-size:24px;cursor:pointer" onclick="openNav()" color="blue"> &#9776; &emsp; Works</span>
+        <span style="font-size:20px;cursor:pointer" onclick="openNav()" color="blue"> &#9776; &emsp; Works</span>
     </div>
     <!-- Works -->
     <!-- 居中对齐 -->
     <div class="col-md-8 col-md-offset-2" style="height: 100vh;">
         <div class="margintwo" id="Reports">
             <h2>Reports</h2>
-
-            <strong>A Short Introduction to Modeling Epidemic Spreading by Branching Process</strong><br />
+            <hr>
+            <h4><strong>A Short Introduction to Modeling Epidemic Spreading by Branching Process</strong></h4>
             <ul>
-                <li class="paper" words="add, your, keywords, here"><a href="./Works/EpidModel.pdf">BeamerVersion</a>
+                <li words="BranchingProcess">
                     This
                     report
                     give a
                     quick
                     introduction to discrete branching process and
-                    its application to epidemic spreading model.</li>
+                    its application to epidemic spreading model.
+                    <a href="./Works/EpidModel.pdf">BeamerVersion</a>
+                </li>
             </ul>
             <hr>
-            <strong>Representation on Crystalliod Group C*-Algebra</strong><br />
+            <h4><strong>Representation on Crystalliod Group C*-Algebra</strong></h4>
             <ul>
-                <li class="paper" words="add, your, keywords, here">
-                    <a href="./Works/GrpCAlg.pdf">BeamerVersion</a>.
+                <li words="GrpCAlg">
                     This is a course final representation on crystalliod group C*-Algebra, which gives an example of
                     projectless simple
                     reduced group C*-algebra. And In that report there contains a brief review on crystalliod groups and
                     harmonic analysis of LCH/LCA
-                    groups
+                    groups.
+                    <a href="./Works/GrpCAlg.pdf">BeamerVersion</a>
                 </li>
             </ul>
         </div>
 
-        <div class="workstxtblock" id="Notes">
+        <div class="margintwo" id="Notes">
             <h2>Notes</h2>
-
-            <strong>Self-Contained Survey on Homological Algebra</strong><br />
+            <hr>
+            <h4><strong>Self-Contained Survey on Homological Algebra</strong></h4>
             <ul>
-                <li class="paper" words="add, your, keywords, here"><a href="./Works/HomologicalAlg.pdf">PDFVersion</a>
+                <li words="HomologicalAlg">
                     This paper gives a self-contained survey on the very first version of homological algebra.
                     And using a little language of category the survey mainly establishes core tools of group
                     cohomology,
                     with certain applications on number theory
-                    (Abelian Galois cohomology). </li>
+                    (Abelian Galois cohomology). Also this notes serve as the bachelor degree thesis for author.
+                    <a href="./Works/HomologicalAlg.pdf">PDFVersion</a>
+                </li>
             </ul>
             <hr>
-            <strong>Homotopy Theory and Top K-theory</strong><br />
+            <h4><strong>Homotopy Theory and Top K-theory</strong></h4>
             <ul>
-                <li class="paper" words="add, your, keywords, here">
+                <li words="Homotopy">
                     On-going.
                 </li>
             </ul>
             <hr>
-            <strong>Notes on probability limits theorems</strong><br />
+            <h4><strong>Notes on probability limits theorems</strong></h4>
             <ul>
-                <li class="paper" words="add, your, keywords, here">
+                <li words="Probability">
                     A course notes about Central limits theorems, Large Number Laws
                     and certain type of deviation estimation inequalities. (On-going)
                 </li>
             </ul>
+
             <hr>
-            <strong>Notes on Representations of Lie Type Grps</strong><br />
+
+            <h4><strong>Notes on Representations of Lie Type Grps</strong></h4>
             <ul>
-                <li class="paper" words="add, your, keywords, here">
+                <li words="LieNotes">
                     On-going.
                 </li>
             </ul>
         </div>
 
-        <div class="workstxtblock" id="Solutions">
+        <div class="margintwo" id="Solutions">
             <h2>Solutions</h2>
-
-            <strong>Problems on Analysis</strong><br />
+            <hr>
+            <h4><strong>Problems on Analysis</strong></h4>
             <ul>
-                <li class="Algorithms" words="add, your, keywords, here">
+                <li words="Analysis">
                     This is a list of some interesting analysis problem solutions. At first it came from
                     some questions that one of my friend gave to me about his graduate entrance exam.
-                    <a href="./Works/Analysis.pdf">SourceCode</a>
+                    <a href="./Works/Analysis.pdf">PDFVersion</a>
                 </li>
             </ul>
             <hr>
-            <strong>A short calculation on Coxeter plane and Coxeter element.</strong><br />
+            <h4><strong>A short calculation on Coxeter plane and Coxeter element.</strong></h4>
             <ul>
-                <li class="paper" words="Coxeter Grps">
-                    On-going.
+                <li words="CoxeterGrps">
+                    On-going. Check this first <a href="./Works/LieRemark.pdf">CoxeterElments</a>
                 </li>
             </ul>
         </div>
 
-        <div class="workstxtblock" id="Programs">
+        <div class="margintwo" id="Programs">
             <h2>Programs</h2>
-
-            <strong>Something about Tarjan Algorithms.</strong><br />
+            <hr>
+            <h4><strong>Something about Tarjan Algorithms.</strong></h4>
             <ul>
-                <li class="Algorithms" words="add, your, keywords, here">
+                <li words="GraphAlgorithms">
                     On-going
                     <a href="#">SourceCode</a>
                 </li>
             </ul>
-            <hr>
-            <strong>C++ template structure</strong><br />
+            <hr />
+            <h4><strong>C++ template structure</strong></h4>
             <ul>
-                <li class="Algorithms" words="add, your, keywords, here">
+                <li words="C++">
                     On-going.
                 </li>
             </ul>
