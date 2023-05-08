@@ -93,9 +93,21 @@
             bottom: 0;
             position: fixed;
             width: 100%;
+            height: auto;
             color: white;
             text-align: center;
-            /*自适应高度*/
+            transition-property: all;
+            transition-delay: 0.2s;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+            /* transition: ease all .5s; */
+        }
+
+        /* 屏幕尺寸过小时隐藏 */
+        @media only screen and (max-height:600px) {
+            .footer {
+                bottom: -150px;
+            }
         }
 
         /* 样式化所有 fontawesome 图标 */
