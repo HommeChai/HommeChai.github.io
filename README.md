@@ -7,7 +7,7 @@ One wants to deploy the academic homepage as simple as possible.
 I am trying to copy some templates of page layouts in certain blog deploying service. The source code reference includes
 
 1. [Sample Resume Template | A Free HTML Resume Template by thingsthatarebrown.com](https://sampleresumetemplate.net/)
-2. [GitHub Project plain-academic](https://github.com/mavroudisv/plain-academic))
+2. [GitHub Project plain-academic](https://github.com/mavroudisv/plain-academic)
 
 If there is any copyrights issue please contact me as soon as possible.
 
