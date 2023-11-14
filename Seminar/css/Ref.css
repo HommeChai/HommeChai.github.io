@@ -1,0 +1,126 @@
+/* This Part of CSS is copied from https://wwli.asia/index.php/en/ */
+a.arXiv,
+a.doi,
+a.slides,
+a.pdf,
+a.MR,
+a.video {
+    border: 1px solid;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding: 2px 4px 2px 4px;
+    display: inline flow-root;
+}
+
+a.arXiv:hover,
+a.doi:hover,
+a.slides:hover,
+a.pdf:hover,
+a.video:hover {
+    text-decoration: none;
+}
+
+a.arXiv,
+a.doi {
+    font-size: 80%;
+}
+
+a.arXiv {
+    background-color: #fef6f6;
+}
+
+a.MR {
+    background-color: #c3f1c2;
+}
+
+a.doi {
+    background-color: #f0f8ff;
+}
+
+a.slides,
+a.pdf,
+a.video {
+    border-radius: 4pt;
+    border-width: 0pt;
+    font-weight: bold;
+    font-size: 85%;
+    color: white;
+}
+
+a.slides {
+    background-color: #0000cd;
+}
+
+a.pdf {
+    background-color: #c91e26;
+}
+
+a.video {
+    background-color: #00a1d6;
+}
+
+/* This part of CSS rendered markdown language to HTML labels */
+/* indent in paragraphs */
+.tab {
+    margin-left: 40px;
+}
+
+/* Markdown List CSS list margin */
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+
+li .mathjax-block,
+li p {
+    margin: 0.5rem 0px;
+}
+
+li blockquote {
+    margin: 1rem 0px;
+}
+
+li {
+    margin: 0px;
+    position: relative;
+}
+
+/* Markdown Style Blockquote */
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+
+blockquote blockquote {
+    padding-right: 0;
+}
+
+.blockquote {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+blockquote {
+    margin: 1rem 0px;
+}
+
+blockquote> :last-child {
+    margin-bottom: 0px;
+}
+
+blockquote> :first-child,
+li> :first-child {
+    margin-top: 0px;
+}
+
+.blockquote-footer {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    font-size: 0.875em;
+    color: #788591;
+}
+
+.blockquote-footer::before {
+    content: "— ";
+}
