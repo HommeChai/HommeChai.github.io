@@ -1,4 +1,5 @@
-# yotally.github.io
+# https://hommechai.github.io/
+
 Static Person Homepage
 #### This is a personal academic homepage
 
