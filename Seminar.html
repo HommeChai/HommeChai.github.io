@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <title>Seminar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel='stylesheet' href="./css/setting.css" type="text/css" />
+    <style>
+        /* 为了兼容移动端显示来禁止滑动 参考了"https://juejin.cn/post/6844903615912476686"的方法通过固定html部分解决 */
+        html {
+            height: 100%;
+            width: 100%;
+            /* 移动端存在两个滑动属性   一个是html相对于浏览器等框架的滑动  一个是body相对于html的滑动  需要分别处理 */
+            /* position: fixed; */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            overflow-y: auto;
+            overflow-x: auto;
+            background-color: #f0eee5fe;
+            /* 字体大小随屏幕自适应 */
+        }
+
+        /* 文字字体 */
+        #text {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="./Home.html">Home</a>
+            <a href="./Works.html">Works</a>
+            <a href="./CV.html">CV</a>
+            <a href="./About.html">About</a>
+            <a href="./index.html">Back</a>
+        </div>
+    </div>
+
+    <div class="topnav">
+        <span style="font-size:20px;cursor:pointer" onclick="openNav()" color="blue"> &#9776; &emsp; About</span>
+    </div>
+
+    <div id="text" class="col-md-6 col-md-offset-3"
+        style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: justify; margin-top: 2cm;">
+        <h2>About me</h2>
+        <p>My name is Chai Hao which is "柴昊" written in simplified Chinese/traditional Chinese.
+            Other things are not so important.
+        </p>
+        <p>
+            Welcome any communication about mathematics and technology.
+        </p>
+        <p>
+            This site should be modified and enriched in a long developing term. Anyone who wants to give
+            some advice/offer helps can contact the e-mail directly.
+        </p>
+    </div>
+
+    <script>
+        //侧边导航栏
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+</body>
+
+</html>
